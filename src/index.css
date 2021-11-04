@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: "Noto Sans TC";
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(199, 205, 211);
+    height: 100vh;
+  }
+  
+  .card{
+    width: 104px;
+    height: 104px;
+    position: relative;
+    transform-style: preserve-3d;/* 3º------Como o elemento está tendo uma transformação de movimento(flip), para dar certo, temos que usar esta propriedade(preserve-3d) */
+    transition: all 500ms; /* 4º-----Fazendo com que a transformação, se torne animado ao clicar(evento onclick) utilizando, assim, a class flip. */
+    cursor: pointer;
+  }
+  .card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    backface-visibility: hidden;/* 2º------ backface-visibility - Determina que TODOS elementos que estiverem em uma posição invertida(determinado pelo transform), não aparecerá(hidden)  */
+  }
+  
+  .flip{
+    transform: rotateY(180deg); /* Flipará quando usar esta classe */
+  }
+  
+  .card-front{
+    background-color: rgba(32, 32, 32, 0.7);
+    transform: rotateY(180deg); /* 1º------- Ao virar, a carta tem que estar na posição certa. Se não fizesse a rotação apareceria ao contrário(como uma palavra aparece no espelho) */
+  }
+  .icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 13px;
+  }
+  .card-back{
+    color: rgb(32, 32, 32);
+    background-color: rgb(11, 143, 196);
+  }
+  
+  #inicio{
+    color: aliceblue;
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    /* display: none; */
+  }
+  
+  #gameOver{
+    color: aliceblue;
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    /* display: none; */
+
+  }
+  .ranking{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .mov{
+    margin-right: 20px;
+  }
+  
+  .podium{
+    display: none;
+  }
+  
+  .btn{
+    padding: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #fdda47;
+    border: none;
+    border-radius: 15px;
+    margin-top: 10px;
+    box-shadow: 1px 1px 5px white;
+    cursor: pointer;
+  }
+  #btn-inp{
+    width: 200px;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #fcf1c5;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    outline: 0;
+    text-align: center;
+    box-shadow: 1px 1px 5px white;
+    cursor: pointer;
+  }
+  
+  #gameBoard{
+    max-width: 700px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .minus-more{
+    color: #fdda47; 
+    text-shadow: 0.5px 0.5px white;
+  }
+
+  .msg-{
+    text-align: center; 
+    font-size: 20px;
+  }
+  
+  @media screen and (max-width: 540px) {
+    .card{
+      width: 90px;
+      height: 90px;
+    }
+  }
