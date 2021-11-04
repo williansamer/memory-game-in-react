@@ -1,5 +1,3 @@
-
-
 let cron;
 
 let game = 
@@ -285,6 +283,26 @@ let game =
           obj[1].b = 10 // esse 10 seria o valor de obj[0].a
       */
       }
+    },
+
+    flipCard: function(cardId, gameOverCallBack, noMatchCallBack){
+      if(this.setCard(cardId)){//vamos mandar o id da carta clicada(this.id(arg)), para o setCard que está no game(game.setCard)
+        if(this.secondCard){
+          if(this.checkMatch()){
+            this.clearCards();
+            if(this.checkGameOver()){
+              this.pauseCron();
+              gameOverCallBack();
+              //setTimeout(this.pointings(), 300);
+            }
+          } else{
+            setTimeout(()=>{  
+                this.unflipCard();//Se Não der Match, desvirar a carta colocando flipped como false e limpar as cartas
+                noMatchCallBack();
+            }, 1000);
+        }
+        }
+    }
     }
   }
 
