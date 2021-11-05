@@ -1,22 +1,13 @@
 import React, {useEffect, useState} from 'react'
-//import Begin from './components/Begin';
 import GameOver from './components/GameOver';
 import GameBoard from './components/GameBoard';
 import game from './game/game';
 
 export default function MemoryGame() {
 
-    //const [begin, setBegin] = useState(true);
     const [gameBoard, setGameBoard] = useState(false);
     const [gameOver, setGameOver] = useState(false);
     const [cards, setCards] = useState([]);
-
-    //function handleBegin(){
-    //    setBegin(false);
-    //    setCards(game.createCardFromLogos());
-    //    setGameBoard(true);
-    //    game.startCron();
-    //}
 
     useEffect(()=>{
         setCards(game.createCardFromLogos());
@@ -37,9 +28,24 @@ export default function MemoryGame() {
 
     return (
         <div>
-            {/* <Begin onHandleBegin={handleBegin} show={begin}></Begin> */}
             <GameBoard handleFlip={handleFlip} cards={cards}></GameBoard>
             <GameOver onHandleGameOver={handleGameOver} show={gameOver}></GameOver>
         </div>
     )
 }
+
+//_________________________Increment later____________________________
+
+//import Begin from './components/Begin';
+
+
+    //const [begin, setBegin] = useState(true);
+
+    //function handleBegin(){
+    //    setBegin(false);
+    //    setCards(game.createCardFromLogos());
+    //    setGameBoard(true);
+    //    game.startCron();
+    //}
+
+    {/* <Begin onHandleBegin={handleBegin} show={begin}></Begin> */}
