@@ -11,7 +11,7 @@ export default function GameOver(props) {
             <br />
             <div className="your-score"></div>
             <br />
-            <div className="ranking">
+{/*             <div className="ranking">
             <div className="inner-box mov">
                 <div className="minus-more">Menos movimento</div>
                 <div className="podium first-position-m">a</div>
@@ -24,7 +24,7 @@ export default function GameOver(props) {
                 <div className="podium second-position-t">b</div>
                 <div className="podium third-position-t">c</div>
             </div>
-            </div>
+            </div> */}
             <button className="btn reinicio" onClick={props.onHandleGameOver}>Jogar Novamente</button>
         </div>
         : <></>}

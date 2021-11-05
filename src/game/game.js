@@ -1,3 +1,11 @@
+/* document.addEventListener("DOMContentLoaded", ()=>{
+  if(localStorage.getItem('nome') != null){
+    document.querySelector("#btn-inp").value = `${localStorage.getItem('nome')}`;
+  } else{
+    document.querySelector("#btn-inp").value = "";
+  }
+}) */
+
 let cron;
 
 let game = 
@@ -292,8 +300,8 @@ let game =
             this.clearCards();
             if(this.checkGameOver()){
               this.pauseCron();
-              gameOverCallBack();
-              //setTimeout(this.pointings(), 300);
+              setTimeout(()=>gameOverCallBack(), 500);
+              //setTimeout(()=>this.pointings(), 300);
             }
           } else{
             setTimeout(()=>{  
