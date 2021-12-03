@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/github-page/static/css/main.3894b867.chunk.css",
-    "main.js": "/github-page/static/js/main.f1d77e6f.chunk.js",
-    "main.js.map": "/github-page/static/js/main.f1d77e6f.chunk.js.map",
-    "runtime-main.js": "/github-page/static/js/runtime-main.47a3808b.js",
-    "runtime-main.js.map": "/github-page/static/js/runtime-main.47a3808b.js.map",
-    "static/js/2.9611f3e9.chunk.js": "/github-page/static/js/2.9611f3e9.chunk.js",
-    "static/js/2.9611f3e9.chunk.js.map": "/github-page/static/js/2.9611f3e9.chunk.js.map",
-    "static/js/3.43b2bedd.chunk.js": "/github-page/static/js/3.43b2bedd.chunk.js",
-    "static/js/3.43b2bedd.chunk.js.map": "/github-page/static/js/3.43b2bedd.chunk.js.map",
-    "index.html": "/github-page/index.html",
-    "static/css/main.3894b867.chunk.css.map": "/github-page/static/css/main.3894b867.chunk.css.map",
-    "static/js/2.9611f3e9.chunk.js.LICENSE.txt": "/github-page/static/js/2.9611f3e9.chunk.js.LICENSE.txt"
+    "main.css": "/memory-game-in-react/static/css/main.3894b867.chunk.css",
+    "main.js": "/memory-game-in-react/static/js/main.f1d77e6f.chunk.js",
+    "main.js.map": "/memory-game-in-react/static/js/main.f1d77e6f.chunk.js.map",
+    "runtime-main.js": "/memory-game-in-react/static/js/runtime-main.4437bb07.js",
+    "runtime-main.js.map": "/memory-game-in-react/static/js/runtime-main.4437bb07.js.map",
+    "static/js/2.9611f3e9.chunk.js": "/memory-game-in-react/static/js/2.9611f3e9.chunk.js",
+    "static/js/2.9611f3e9.chunk.js.map": "/memory-game-in-react/static/js/2.9611f3e9.chunk.js.map",
+    "static/js/3.43b2bedd.chunk.js": "/memory-game-in-react/static/js/3.43b2bedd.chunk.js",
+    "static/js/3.43b2bedd.chunk.js.map": "/memory-game-in-react/static/js/3.43b2bedd.chunk.js.map",
+    "index.html": "/memory-game-in-react/index.html",
+    "static/css/main.3894b867.chunk.css.map": "/memory-game-in-react/static/css/main.3894b867.chunk.css.map",
+    "static/js/2.9611f3e9.chunk.js.LICENSE.txt": "/memory-game-in-react/static/js/2.9611f3e9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.47a3808b.js",
+    "static/js/runtime-main.4437bb07.js",
     "static/js/2.9611f3e9.chunk.js",
     "static/css/main.3894b867.chunk.css",
     "static/js/main.f1d77e6f.chunk.js"
